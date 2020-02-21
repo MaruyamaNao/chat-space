@@ -4,8 +4,8 @@
 |------|----|-------|
 |body|text|
 |image|string|
-|user_id|reference|null: false|
-|group_id|reference|null: false|
+|user_id|reference|null: false, foreign_key: true|
+|group_id|reference|null: false, foreign_key: true|
 <!-- アソシエーション -->
 belongs_to : group
 belongs_to : user
