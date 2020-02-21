@@ -4,8 +4,8 @@
 |------|----|-------|
 |body|text|
 |image|string|
-|user_id|integer|
-|group_id|integer|
+|user_id|integer|null: false|
+|group_id|integer|null: false|
 <!-- アソシエーション -->
 belongs_to : group
 belongs_to : user
@@ -13,8 +13,8 @@ belongs_to : user
 <!-- usersテーブル -->
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|name, null: false|
-|user_email|string|add_index : unique: true|
+|name|string|name, null: false|
+|email|string|add_index : unique: true|
 <!-- アソシエーション -->
 has_many : groups_users
 has_many : groups, through: :groups_users
@@ -24,7 +24,7 @@ has_many : messages
 <!-- groupsテーブル -->
 |Column|Type|Options|
 |------|----|-------|
-|name_group|string|name, null: false|
+|name|string|name, null: false|
 <!-- アソシエーション -->
 has_many : groups_users
 has_many : users, through: :groups_users
