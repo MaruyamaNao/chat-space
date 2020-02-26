@@ -1,0 +1,26 @@
+.mainchat
+  .mainchat__top
+    .mainchat__top__left
+      text
+      .mainchat__top__left__member
+        Member : 名前
+    .mainchat__top__right
+      = link_to "Edit" , "#" ,class: "btn"
+
+  .mainchat__message
+    .mainchat__message__name
+      名前
+      .mainchat__message__name__date
+        日付
+    .mainchat__message__text
+      おはよう
+
+  .mainchat__bottom
+    %form.input
+      .form-input
+        %input{type: "text" , class: "text" , placeholder: "type a mesege"}
+        %label{class: "img"}
+          = icon('far', 'image')
+          %input{type: "file"  , class: "file"}
+
+      %input{type: "submit" , class: "send" , value: "send"}
