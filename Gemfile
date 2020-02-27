@@ -51,12 +51,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-<<<<<<< HEAD
-<<<<<<< HEAD
 gem 'haml-rails'
 gem 'font-awesome-sass'
 gem 'devise'
-=======
->>>>>>> parent of baea23b... Revert "Revert "Revert "Revert "Revert "add"""""
-=======
->>>>>>> parent of baea23b... Revert "Revert "Revert "Revert "Revert "add"""""
