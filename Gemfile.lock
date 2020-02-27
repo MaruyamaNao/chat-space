@@ -120,7 +120,10 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -177,7 +180,10 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
   devise
   font-awesome-sass
   haml-rails
