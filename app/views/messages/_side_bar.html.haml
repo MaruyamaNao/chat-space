@@ -4,13 +4,19 @@
       .sidebar__top__block__left
         name
       .sidebar__top__block__right
-        = link_to  "#" ,class:"edit" do
-          -# = icon('far', 'edit')
-        = link_to "#" ,class:"cog" do
-          -# = icon('fas', 'cog')
+        = link_to  "groups/new" ,class:"edit" do
+      
+          = icon('far', 'edit')
+        = link_to "" ,class:"cog" do
+          = icon('fas', 'cog')
+
+  -# = link_to new_group_path do
 
   .sidebar__content
-    .sidebar__content__group
-      大草原
-    .sidebar__content__text
-      草
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .sidebar__content__group
+            = group.name
+          .sidebar__content__text
+            メッセージはまだありません。
