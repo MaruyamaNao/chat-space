@@ -51,11 +51,15 @@
 
       &__group{
         font-size: 15px;
+        color: #ffffff;
+        // text-decoration: none;
       }
 
       &__text{
         font-size: 11px;
         padding: 5px 0px 40px;
+        color: #ffffff;
+        // text-decoration: none;
       }
     }
 
@@ -132,29 +136,35 @@
       position: absolute;
       bottom: 0;
       width: 100%;
+      
 
        form{
-        margin: 20px 40px;
+        margin: 20px;
         height: 50px;
         display: flex;
         justify-content: space-between;
         
+        
         .form-input{
-          position: relative;
           width: 100%;
+          display: flex;
+          padding: 0px 40px 0px 10px;
 
           .text{
-            padding:  0px 40px 0px 10px;
             height: 100%;
             width: 100%;
           }
 
           .img{    
-            right: 10px;
-            top: 10px;
+            position: relative;
+
+            .icon{
+            right: 15px;
+            top: 15px;
             font-size: 1.3rem;
             position: absolute;
             cursor: pointer;
+            }
 
             .file{
               display: none;
@@ -170,6 +180,7 @@
           line-height: 50px;
           text-align: center;
           margin-left: 15px;
+          cursor: pointer;
         }
       }
     }
