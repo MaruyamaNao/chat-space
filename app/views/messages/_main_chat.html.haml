@@ -3,12 +3,12 @@
     .mainchat__top__left
       = @group.name 
     .mainchat__top__left__member
-      -# Member :
+      Member :
       -#   - @group.users.each do |user|
       -#     = user.name
 
     .mainchat__top__right
-      = link_to "Edit" , "groups/edit" ,class: "btn"
+      = link_to "Edit" , edit_group_path(current_user) ,class: "btn"
 
   .mainchat__message
     = render @messages
