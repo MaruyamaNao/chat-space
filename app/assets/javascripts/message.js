@@ -1,3 +1,4 @@
+
 $(function(){ 
   function buildHTML(message){
    if ( message.image ) {
