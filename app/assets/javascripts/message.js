@@ -65,5 +65,4 @@ $('#new_message').on('submit', function(e){
     $('.send').prop('disabled', false);
   });
 });
-})
 });
