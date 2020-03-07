@@ -118,16 +118,18 @@
         font-size: 16px;
         margin-bottom: 12px;
         display: flex;
-
-        &__date{
-          color: #999999;
-          font-size: 12px;
-          margin-left: 10px;
-        }
       }
+    
+      &__date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    
 
       &__text{
         font-size: 14px;
+        color: #434a54;
       }
     }
 
