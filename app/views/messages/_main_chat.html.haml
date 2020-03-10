@@ -12,10 +12,10 @@
     = render @messages
 
   .mainchat__bottom
-    .form-input
-      = form_for [@group, @message] do |f|
+    = form_for [@group, @message] do |f|  
+      .form-input      
         = f.text_field :content, class: 'text', placeholder: 'type a message'
         = f.label :image, class: 'img' do
           = icon('far', 'image', class: 'icon')
           = f.file_field :image, class: 'file'
-        = f.submit 'Send', class: 'send'
+      = f.submit 'Send', class: 'send'
