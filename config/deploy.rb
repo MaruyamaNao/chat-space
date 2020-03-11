@@ -1,4 +1,4 @@
-lock '~> 3.12.1'
+lock '3.12.1'
 
 set :application, 'chat-space'
 
@@ -10,7 +10,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.5.1'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/proects/chat-space'] 
+                  keys: ['~/.ssh/chat-space.pem'] 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
