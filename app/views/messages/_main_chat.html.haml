@@ -19,10 +19,10 @@
       .mainchat__message__date
 
   .mainchat__bottom
-    = form_for [@group, @message] do |f|  
-      .form-input      
+    .form-input
+      = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'text', placeholder: 'type a message'
         = f.label :image, class: 'img' do
           = icon('far', 'image', class: 'icon')
           = f.file_field :image, class: 'file'
-      = f.submit 'Send', class: 'send'
+        = f.submit 'Send', class: 'send'
