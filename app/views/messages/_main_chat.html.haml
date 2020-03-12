@@ -10,13 +10,7 @@
       = link_to "Edit" , edit_group_path(current_user) ,class: "btn"
 
   .mainchat__message
-    -# - group.messages.each do |user|
-      .mainchat__message__name
-        -# = user.name
-
-      .mainchat__message__text
-
-      .mainchat__message__date
+    = render @messages
 
   .mainchat__bottom
     = form_for [@group, @message] do |f|  
