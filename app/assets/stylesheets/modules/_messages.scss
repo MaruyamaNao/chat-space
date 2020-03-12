@@ -48,10 +48,14 @@
 
     &__content{
       padding: 20px 20px 0px 20px;
+      text-decoration: none;
+
+
 
       &__group{
         font-size: 15px;
         color: #ffffff;
+    
       }
 
       &__text{
@@ -59,6 +63,7 @@
         padding: 5px 0px 40px;
         color: #ffffff;
       }
+      
     }
   }
 
@@ -186,4 +191,8 @@
       }
     }
   }
+
+}
+a {
+    text-decoration: none;
 }
