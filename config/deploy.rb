@@ -1,7 +1,5 @@
 lock '3.12.1'
 
-set :linked_files, %w{ config/secrets.yml }
-
 set :application, 'chat-space'
 
 set :repo_url,  'git@github.com:MaruyamaNao/chat-space.git'
@@ -17,6 +15,9 @@ set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
+
+set :linked_files, %w{ config/secrets.yml }
+
 
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
