@@ -4,8 +4,9 @@
       .sidebar__top__block__left
         = current_user.name
       .sidebar__top__block__right
-        = link_to  new_group_path do
+        = link_to  new_group_path do 
           = icon('far', 'edit' , class: 'edit' )
+          %span<>
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog' , class: 'cog' )
 
